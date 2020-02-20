@@ -6,4 +6,4 @@
 INPUT_DIR=.
 OUTPUT_DIR=./out
 
-find ${INPUT_DIR} -name *.pdf -print | xargs -I{} soffice --headless --convert-to pdf {} --outdir ${OUTPUT_DIR}
+find ${INPUT_DIR} -name "*.pdf" -print0 | xargs -I{} soffice --headless --convert-to pdf {} --outdir ${OUTPUT_DIR}
