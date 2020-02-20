@@ -53,6 +53,6 @@ echo
 while IFS= read -r -d $'\0' filename; do
   echo "Processing: ${filename}"
   echo "=========="
-  soffice --headless --convert-to pdf ${filename} --outdir "${OUTPUT_DIR}"
+  soffice --headless --convert-to pdf "${filename}" --outdir "${OUTPUT_DIR}"
   echo
 done < <(find "${INPUT_DIR}" -name "*.pdf" -not -path "${OUTPUT_DIR}/*" -print0)
