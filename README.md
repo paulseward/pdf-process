@@ -8,6 +8,9 @@ This tooling is likely specific to my use case, but my workflow is roughly:
 
 OCR will come later, as will any more sophisticated manipulation of these documents.
 
+## Tools
+* `soffice-compress` - bash script which uses LibreOffice to reduce scan filesizes
+
 ## Dependencies
 * Bash
 * LibreOffice - https://www.libreoffice.org - specifically the `soffice` binary
